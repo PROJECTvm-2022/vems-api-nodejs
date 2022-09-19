@@ -1,0 +1,56 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "v1/user",
+    "secret": "WonUt7OVw3EVoWp4jmT3a6Nyc9Q=",
+    "authStrategies": [
+      "jwt",
+      "local",
+      "phone"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "365d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mongodb": "mongodb+srv://jupionv2:Admin@1234@jupion-api.hgmzf.mongodb.net/vems_dev",
+  "fcm-server-key": "AAAACWkcsII:APA91bFq-KquB4dQLSkypz8r8Klic2iJvg6JcYovXoACxy3RoKPTedO1MzrXNu7tLR6slBE4e902ck17cEp7WLrK_dhqmFVBkr8pPcNmO-q6mWve6Ypy93zsDb6ohpBNLfWdhwwvrn-I",
+  "redis": {
+      "host": "127.0.0.1",
+      "port": 6379,
+      "localDb": "d9",
+      "globalDb": "d0"
+  },
+  "otp": {
+      "length": 6,
+      "expireOn": 10,
+      "viewLog": true
+  },
+  "mail": {
+      "host": "smtp.hostinger.com",
+      "port": 465,
+      "secure": true,
+      "auth": {
+          "user": "no-reply@ems.vernacularmedium.com",
+          "pass": "VMEMSmailnoreply@#2022"
+      }
+  },
+  "google_oauth_url": "https://www.googleapis.com/oauth2/v2/userinfo",
+  "testDate": "07/13/2021"
+}

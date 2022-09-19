@@ -1,0 +1,10 @@
+{
+  "otp": {
+      "length": 6,
+      "expireOn": 10,
+      "viewLog": false
+  },
+  "mongodb": "mongodb://127.0.0.1:27017/vems",
+  "single_device_login": true,
+  "testDate": "07/13/2021"
+}
